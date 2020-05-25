@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HackerNews with loading state false should render the HackerNews Component correctly 1`] = `
+<div>
+  <div
+    className="App-header"
+  >
+    <div
+      className="App-header-y"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      Y
+    </div>
+    <div
+      className="App-header-links"
+    >
+      <span
+        className="active"
+        id="top"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        top
+      </span>
+      <span>
+        |
+      </span>
+      <span
+        className=""
+        id="new"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        new
+      </span>
+    </div>
+  </div>
+  <div
+    className="Loading"
+  >
+    Loading...
+  </div>
+</div>
+`;

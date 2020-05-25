@@ -141,25 +141,34 @@ export default class HackerNews extends React.Component {
     const {
       error, isLoaded, items, filter,
     } = this.state;
+
+    const headerDOM = (
+      <div className="App-header">
+        <div className="App-header-y" role="button" tabIndex="0" onClick={this.gotoHomePage} onKeyDown={this.gotoHomePage}>Y</div>
+        <div className="App-header-links">
+          <span id="top" role="button" tabIndex="0" className={filter === 'top' ? 'active' : ''} onClick={this.updateFilter} onKeyDown={this.updateFilter}>
+              top
+          </span>
+          <span>|</span>
+          <span id="new" tabIndex="0" role="button" className={filter === 'new' ? 'active' : ''} onClick={this.updateFilter} onKeyDown={this.updateFilter}>
+              new
+          </span>
+        </div>
+      </div>
+    );
     if (error) {
       return <div>Error</div>;
     } if (!isLoaded) {
-      return <div>Loading...</div>;
+      return (
+        <div>
+          { headerDOM }
+          <div className="Loading">Loading...</div>
+        </div>
+      );
     }
     return (
       <div className="News-feeds">
-        <div className="App-header">
-          <div className="App-header-y" role="button" tabIndex="0" onClick={this.gotoHomePage} onKeyDown={this.gotoHomePage}>Y</div>
-          <div className="App-header-links">
-            <span id="top" role="button" tabIndex="0" className={filter === 'top' ? 'active' : ''} onClick={this.updateFilter} onKeyDown={this.updateFilter}>
-              top
-            </span>
-            <span>|</span>
-            <span id="new" tabIndex="0" role="button" className={filter === 'new' ? 'active' : ''} onClick={this.updateFilter} onKeyDown={this.updateFilter}>
-              new
-            </span>
-          </div>
-        </div>
+        { headerDOM }
         <div className="App-content-area">
           {
             items.map((news, index) => {
