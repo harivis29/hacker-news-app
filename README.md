@@ -1,6 +1,6 @@
 # Hacker News App
 
-Hacker news app contains list of news with upvote and hide functionality. It has all in information related to author and publication.
+Hacker news app contains list of news with upvote and hide functionality. It also have all the information related to author and publication.
 
 ## Installation
 
@@ -20,5 +20,7 @@ yarn build
 ```bash
 yarn test
 ```
+## Heroku Depoyment Url
+Use the following link to access the app deployed on Heroku [link](https://hackernews-appreact.herokuapp.com/)
 
  
