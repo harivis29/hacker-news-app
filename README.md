@@ -1,4 +1,24 @@
-# hn-clone-starter-react (React Starter for hiring - PS-XT) [![Build Status](https://travis-ci.org/ps-xt-hiring/hn-clone-starter-react.svg?branch=master)](https://travis-ci.org/ps-xt-hiring/hn-clone-starter-react)
+# Hacker News App
 
-1. Fork this repo into your Github account.
-2. Do not modify .travis.yml
+Hacker news app contains list of news with upvote and hide functionality. It has all in information related to author and publication.
+
+## Installation
+
+1. Install node modules using yarn
+```bash
+yarn
+```
+2. To start the app
+```bash
+yarn start
+```
+3. To generate the build
+```bash
+yarn build
+```
+4. To run the test cases
+```bash
+yarn test
+```
+
+ 
